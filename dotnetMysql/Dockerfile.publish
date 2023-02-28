@@ -5,6 +5,5 @@ EXPOSE 80
 EXPOSE 443
 
 WORKDIR /app
-COPY build/ .
 COPY . .
 ENTRYPOINT ["dotnet", "dotnetMysql.Api.dll"]
